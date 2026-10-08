@@ -1,0 +1,2 @@
+﻿const searchField = document.querySelector('#site-search');
+if (searchField) { searchField.addEventListener('input', (event) => { const term = event.target.value.trim().toLowerCase(); const targets = document.querySelectorAll('.search-target'); targets.forEach((node) => { const text = (node.textContent || '').toLowerCase(); const shouldShow = !term || text.includes(term); node.classList.toggle('hidden', !shouldShow); }); }); }
