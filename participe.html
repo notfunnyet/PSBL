@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Participe | PSBL</title>
     <meta name="description" content="Participe do movimento PSBL: apoie, contribua e acompanhe o processo de formação." />
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./responsive.css" />
   </head>
@@ -13,7 +13,7 @@
     <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="index.html" class="brand" aria-label="PSBL início"><span class="brand-text"><span>PSBL</span><strong>Partido Soberania Brasileira Liberal</strong></span></a>
+        <a href="index.html" class="brand" aria-label="PSBL início"><img class="brand-mark" src="../download.svg" alt="" /><span class="brand-text"><span>PSBL</span><strong>Partido</strong></span></a>
         <div class="nav-layout">
           <nav class="nav" aria-label="Navegação principal">
             <a href="index.html">Início</a>
@@ -43,7 +43,7 @@
         <form class="form" id="form-participe" style="margin-top:32px;" action="https://formsubmit.co/daepicboi123@gmail.com" method="POST" novalidate>
           <h2>Entre em contato com a equipe de organização</h2>
 
-          <!-- Anti-spam -->
+          <!-- Anti-spam (campo escondido; robôs costumam preencher) -->
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <input type="hidden" name="_subject" value="Novo cadastro - Participe PSBL" />
           <input type="hidden" name="_captcha" value="false" />
@@ -104,7 +104,7 @@
     <script src="./faq.js"></script>
     <script src="./search.js"></script>
     <script>
-      
+      // ⚠️ Troque pelo SEU e-mail. É para esse endereço que os cadastros serão enviados.
       var EMAIL_DESTINO = "daepicboi123@gmail.com";
 
       (function () {
