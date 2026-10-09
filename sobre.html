@@ -3,27 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre | PSBL</title>
-    <meta name="description" content="Conheça a trajetória e a identidade institucional do PSBL em formação." />
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>Participe | PSBL</title>
+    <meta name="description" content="Participe do movimento PSBL: apoie, contribua e acompanhe o processo de formação." />
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./responsive.css" />
   </head>
-  <body data-page="sobre">
+  <body data-page="participe">
     <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="index.html" class="brand" aria-label="PSBL início"><span class="brand-text"><span>PSBL</span><strong>Partido Soberania Brasileira Liberal</strong></span></a>
+        <a href="index.html" class="brand" aria-label="PSBL início"><img class="brand-mark" src="../download.svg" alt="" /><span class="brand-text"><span>PSBL</span><strong>Partido</strong></span></a>
         <div class="nav-layout">
           <nav class="nav" aria-label="Navegação principal">
             <a href="index.html">Início</a>
-            <a href="sobre.html" class="active">Sobre</a>
+            <a href="sobre.html">Sobre</a>
             <a href="principios.html">Princípios</a>
             <a href="propostas.html">Propostas</a>
             <a href="documentos.html">Documentos</a>
             <a href="transparencia.html">Transparência</a>
             <a href="noticias.html">Notícias</a>
-            <a href="participe.html">Participe</a>
+            <a href="participe.html" class="active">Participe</a>
             <a href="faq.html">FAQ</a>
           </nav>
           <div class="nav-actions">
@@ -37,60 +37,138 @@
     </header>
 
     <main id="main-content">
-      <section class="page-hero"><div class="container"><div class="breadcrumb"><a href="index.html">Início</a> / Sobre</div><h1>Sobre o PSBL</h1></div></section>
-      <section class="page-shell"><div class="container search-target">
-        <div class="notice"><p>O PSBL é apresentado como <strong>partido em formação</strong> e não como partido oficialmente registrado no TSE, salvo confirmação formal por parte das autoridades competentes.</p></div>
-        <div class="grid grid-2">
-          <div>
-            <h2>História e origem</h2>
-            <p>Meu nome é Gabriel Biagi Souza, sou fundador do Partido Soberania Brasileira Liberal (PSBL), tenho 13 anos, e estudante da área de Tecnologia da Informação. Desde cedo, desenvolvi um profundo interesse pela política e pelo funcionamento das instituições públicas, buscando compreender os desafios que impedem o pleno desenvolvimento do Brasil.
+      <section class="page-hero"><div class="container"><div class="breadcrumb"><a href="index.html">Início</a> / Participe</div><h1>Participe do PSBL</h1></div></section>
+      <section class="page-shell"><div class="container"><div class="grid grid-2"><div class="panel search-target"><h2>Como colaborar</h2><ul class="list"><li>Compartilhe ideias e propostas para o programa do partido.</li><li>Participe de iniciativas locais e debates regionais.</li><li>Contribua para a organização e mobilização institucional.</li><li>Acompanhe os materiais e as atualizações da estrutura em formação.</li></ul></div><div class="panel search-target"><h2>Oportunidades</h2><ul class="list"><li>Voluntariado e mobilização comunitária.</li><li>Contribuição em educação, tecnologia e organização partidária.</li><li>Campanhas de apoio e difusão de ideias.</li><li>Participação em eventos e seminários.</li></ul></div></div>
 
-O que mais me preocupa é a persistência de problemas estruturais na administração pública, como a corrupção, o desvio de recursos públicos, os acordos internacionais que não atendem adequadamente aos interesses nacionais e a estagnação do desenvolvimento socioeconômico.
+        <form class="form" id="form-participe" style="margin-top:32px;" novalidate>
+          <h2>Entre em contato com a equipe de organização</h2>
 
-Diante desse cenário, decidi fundar o PSBL, com o propósito de defender uma nova perspectiva para o futuro do país, fundamentada na soberania nacional, na valorização da pátria, na responsabilidade política e no compromisso com os interesses do povo brasileiro.
+          <!-- Anti-spam (campo escondido; robôs costumam preencher) -->
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+          <input type="hidden" name="_subject" value="Novo cadastro - Participe PSBL" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
 
-Acredito que o Brasil possui potencial para alcançar um novo patamar de desenvolvimento, desde que suas instituições atuem com transparência, responsabilidade e compromisso com a população. Meu objetivo é contribuir para a construção de um projeto político que valorize a independência nacional, combata a corrupção e promova um futuro mais próspero para o país.
-
-O PSBL nasce dessa convicção: a de que o Brasil precisa de um projeto sério, comprometido com sua soberania, suas potencialidades e seu povo.
-</p>
-            <p>O projeto do Partido Soberania Brasileira Liberal nasce de um esforço coletivo de organização política, inspirado na defesa da soberania nacional, da liberdade individual, da iniciativa privada e da responsabilidade pública.</p>
-            <p>Seu desenvolvimento se dá em um processo institucional de formação, com foco na definição de princípios, organização partidária, propostas, documentos e mobilização de apoiadores e militantes.</p>
+          <div class="form-grid">
+            <div><label>Nome completo<input type="text" name="nome" placeholder="Seu nome completo" required autocomplete="name" /></label></div>
+            <div><label>E-mail<input type="email" name="email" placeholder="voce@email.com" required autocomplete="email" /></label></div>
           </div>
-<div class="panel" style="display:flex; align-items:center; justify-content:flex-start; border:none; box-shadow:none;">
-  <img
-    src="./bandeira-psbl.svg"
-    alt="Bandeira do PSBL"
-    style="display:block; width:100%; max-width:420px; height:auto; border:none; border-radius:0; box-shadow:none;"
-  /></div>
-        </div>
-        <div class="grid grid-3" style="margin-top:28px;">
-          <article class="card search-target"><h3>Missão</h3><p>Contribuir para o debate democrático brasileiro com um projeto nacional, liberal, responsável e comprometido com a soberania, a ordem constitucional e o desenvolvimento.</p></article>
-          <article class="card search-target"><h3>Visão</h3><p>Ser uma referência política de organização institucional e pluralidade popular, com foco em liberdade, segurança, saúde, educação, infraestrutura e desenvolvimento regional.</p></article>
-          <article class="card search-target"><h3>Valores</h3><p>Estão no centro do projeto a soberania nacional, a liberdade econômica, a responsabilidade individual, o respeito às leis, à cultura e às instituições democráticas.</p></article>
-        </div>
-        <div style="margin-top:40px;">
-          <h2>Identidade nacional e organização partidária</h2>
-          <p>O PSBL busca dialogar com a identidade brasileira, reconhecendo a importância da cultura, da tradição institucional, da diversidade regional e do respeito às liberdades civis. A organização partidária, nesse momento, se estrutura como um processo transparente e democrático de formação, com regras claras, aprimoramento programático e mobilização social.</p>
-        </div>
+          <div class="form-grid">
+            <div>
+              <label>Estado
+                <select name="estado" required>
+                  <option value="" selected disabled>Selecione seu estado</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                </select>
+              </label>
+            </div>
+            <div><label>Interesse<select name="interesse"><option>Quero apoiar</option><option>Quero colaborar</option><option>Quero participar de eventos</option></select></label></div>
+          </div>
+          <div><label>Mensagem<textarea name="mensagem" placeholder="Conte como deseja participar do processo..."></textarea></label></div>
+          <button class="btn btn-primary" type="submit" id="form-participe-btn">Enviar</button>
+          <p id="form-participe-status" role="status" aria-live="polite" style="margin-top:12px;"></p>
+        </form>
       </div></section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div><h3>PSBL</h3><p>Partido Soberania Brasileira Liberal. Projeto institucional dedicado à soberania, liberdade, responsabilidade e desenvolvimento nacional.</p></div>
-          <div><h4>Navegação</h4><ul><li><a href="sobre.html">Sobre</a></li><li><a href="principios.html">Princípios</a></li><li><a href="propostas.html">Propostas</a></li><li><a href="documentos.html">Documentos</a></li></ul></div>
-          <div><h4>Institucional</h4><ul><li><a href="transparencia.html">Transparência</a></li><li><a href="noticias.html">Notícias</a></li><li><a href="participe.html">Participe</a></li></ul></div>
-          <div><h4>Ajuda</h4><ul><li><a href="faq.html">Perguntas frequentes</a></li></ul></div>
-        </div>
-        <div class="footer-bottom"><span>© <span id="year"></span> PSBL — Partido Soberania Brasileira Liberal</span><span>Partido em formação</span></div>
-      </div>
-    </footer>
+    <footer class="footer"><div class="container"><div class="footer-grid"><div><h3>PSBL</h3><p>Partido Soberania Brasileira Liberal. Projeto institucional dedicado à soberania, liberdade, responsabilidade e desenvolvimento nacional.</p></div><div><h4>Navegação</h4><ul><li><a href="sobre.html">Sobre</a></li><li><a href="principios.html">Princípios</a></li><li><a href="propostas.html">Propostas</a></li><li><a href="documentos.html">Documentos</a></li></ul></div><div><h4>Institucional</h4><ul><li><a href="transparencia.html">Transparência</a></li><li><a href="noticias.html">Notícias</a></li><li><a href="participe.html">Participe</a></li></ul></div><div><h4>Ajuda</h4><ul><li><a href="faq.html">Perguntas frequentes</a></li></ul></div></div><div class="footer-bottom"><span>© <span id="year"></span> PSBL — Partido Soberania Brasileira Liberal</span><span>Partido em formação</span></div></div></footer>
     <button class="back-to-top" type="button" aria-label="Voltar ao topo">↑</button>
-    <div class="modal" aria-hidden="true"><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-header"><h3 id="modal-title">Documento</h3><button class="close-modal" type="button" aria-label="Fechar modal">×</button></div><div id="modal-body"></div></div></div>
     <script src="./main.js"></script>
     <script src="./menu.js"></script>
     <script src="./faq.js"></script>
     <script src="./search.js"></script>
+    <script>
+      // ⚠️ Troque pelo SEU e-mail. É para esse endereço que os cadastros serão enviados.
+      var EMAIL_DESTINO = "SEU_EMAIL@exemplo.com";
+
+      (function () {
+        var form = document.getElementById("form-participe");
+        var btn = document.getElementById("form-participe-btn");
+        var status = document.getElementById("form-participe-status");
+        if (!form) return;
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          var nome = form.nome.value.trim();
+          var email = form.email.value.trim();
+          var estado = form.estado.value;
+
+          if (nome.split(/\s+/).length < 2) {
+            status.textContent = "Informe seu nome completo (nome e sobrenome).";
+            form.nome.focus();
+            return;
+          }
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            status.textContent = "Informe um e-mail válido.";
+            form.email.focus();
+            return;
+          }
+          if (!estado) {
+            status.textContent = "Selecione seu estado.";
+            form.estado.focus();
+            return;
+          }
+
+          btn.disabled = true;
+          status.textContent = "Enviando...";
+
+          fetch("https://formsubmit.co/ajax/" + encodeURIComponent(EMAIL_DESTINO), {
+            method: "POST",
+            headers: { "Content-Type": "application/json", "Accept": "application/json" },
+            body: JSON.stringify({
+              "Nome completo": nome,
+              "E-mail": email,
+              "Estado": form.estado.options[form.estado.selectedIndex].text + " (" + estado + ")",
+              "Interesse": form.interesse.value,
+              "Mensagem": form.mensagem.value.trim(),
+              _subject: "Novo cadastro - Participe PSBL",
+              _captcha: "false",
+              _template: "table",
+              _honey: form._honey.value
+            })
+          })
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+              if (data && (data.success === "true" || data.success === true)) {
+                status.textContent = "Cadastro enviado com sucesso! Obrigado por participar.";
+                form.reset();
+              } else {
+                throw new Error("falha");
+              }
+            })
+            .catch(function () {
+              status.textContent = "Não foi possível enviar agora. Tente novamente em instantes.";
+            })
+            .finally(function () { btn.disabled = false; });
+        });
+      })();
+    </script>
   </body>
 </html>
