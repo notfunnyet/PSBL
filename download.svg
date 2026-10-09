@@ -1,24 +1,27 @@
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 20 540 560">
   <defs>
-    <linearGradient id="bandeira" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0a7d46"></stop>
-      <stop offset="50%" stop-color="#f8f8f8"></stop>
-      <stop offset="50%" stop-color="#f8f8f8"></stop>
-      <stop offset="50%" stop-color="#000000"></stop>
-      <stop offset="100%" stop-color="#000000"></stop>
-    </linearGradient>
+    <path id="brasil"
+          d="M95,80 L130,75 L165,45 L190,48 L215,32 L228,45 L240,95 L268,78 L300,85 L335,45 L345,42 L358,80 L365,100 L405,115 L440,130 L470,145 L500,142 L525,160 L548,175 L562,200 L560,225 L545,245 L525,265 L515,290 L510,330 L500,360 L495,385 L470,410 L440,420 L410,430 L385,450 L380,475 L375,505 L355,520 L335,545 L318,568 L312,555 L290,545 L262,520 L280,490 L310,478 L305,460 L300,430 L290,425 L262,410 L250,395 L255,360 L262,345 L240,330 L220,325 L225,290 L210,285 L155,265 L150,240 L135,238 L110,252 L85,245 L60,238 L50,225 L40,205 L50,185 L70,170 L90,160 Z"/>
 
-    <clipPath id="texto">
-      <text x="120" y="59" text-anchor="middle" font-family="Ledlight, sans-serif" font-size="58" font-weight="bold" letter-spacing="2">PSBL</text>
+    <clipPath id="recorte-mapa">
+      <use href="#brasil"/>
     </clipPath>
   </defs>
 
-  <rect width="240" height="80" fill="none"></rect>
 
-  <g clip-path="url(#texto)">
-    <rect x="0" y="0" width="240" height="26.67" fill="#0a7d46"></rect>
-    <rect x="0" y="26.67" width="240" height="26.66" fill="#f8f8f8"></rect>
-    <rect x="0" y="53.33" width="240" height="26.67" fill="#000000"></rect>
+  <g clip-path="url(#recorte-mapa)">
+    <rect x="0" y="0"   width="600" height="211" fill="#0a7d46"/>
+    <rect x="0" y="211" width="600" height="178" fill="#f8f8f8"/>
+    <rect x="0" y="389" width="600" height="211" fill="#000000"/>
   </g>
+
+
+  <use href="#brasil" fill="none" stroke="#bdbdbd" stroke-width="2" stroke-linejoin="round"/>
+
+
+  <text x="300" y="365" text-anchor="middle"
+        font-family="Arial Black, Arial, sans-serif" font-size="140"
+        font-weight="900" letter-spacing="2"
+        fill="#1f1f1f" stroke="#ffffff" stroke-width="14"
+        stroke-linejoin="round" paint-order="stroke">PSBL</text>
 </svg>
