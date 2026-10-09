@@ -38,16 +38,63 @@
 
     <main id="main-content">
       <section class="page-hero"><div class="container"><div class="breadcrumb"><a href="index.html">Início</a> / Participe</div><h1>Participe do PSBL</h1></div></section>
-      <section class="page-shell"><div class="container"><div class="grid grid-2"><div class="panel search-target"><h2>Como colaborar</h2><ul class="list"><li>Compartilhe ideias e propostas para o programa do partido.</li><li>Participe de iniciativas locais e debates regionais.</li><li>Contribua para a organização e mobilização institucional.</li><li>Acompanhe os materiais e as atualizações da estrutura em formação.</li></ul></div><div class="panel search-target"><h2>Oportunidades</h2><ul class="list"><li>Voluntariado e mobilização comunitária.</li><li>Contribuição em educação, tecnologia e organização partidária.</li><li>Campanhas de apoio e difusão de ideias.</li><li>Participação em eventos e seminários.</li></ul></div></div><div class="form" style="margin-top:32px;">
+      <section class="page-shell"><div class="container"><div class="grid grid-2"><div class="panel search-target"><h2>Como colaborar</h2><ul class="list"><li>Compartilhe ideias e propostas para o programa do partido.</li><li>Participe de iniciativas locais e debates regionais.</li><li>Contribua para a organização e mobilização institucional.</li><li>Acompanhe os materiais e as atualizações da estrutura em formação.</li></ul></div><div class="panel search-target"><h2>Oportunidades</h2><ul class="list"><li>Voluntariado e mobilização comunitária.</li><li>Contribuição em educação, tecnologia e organização partidária.</li><li>Campanhas de apoio e difusão de ideias.</li><li>Participação em eventos e seminários.</li></ul></div></div>
+
+        <form class="form" id="form-participe" style="margin-top:32px;" novalidate>
           <h2>Entre em contato com a equipe de organização</h2>
+
+          <!-- Anti-spam (campo escondido; robôs costumam preencher) -->
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+          <input type="hidden" name="_subject" value="Novo cadastro - Participe PSBL" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
           <div class="form-grid">
-            <div><label>Nome<input type="text" placeholder="Seu nome" /></label></div>
-            <div><label>E-mail<input type="email" placeholder="voce@email.com" /></label></div>
+            <div><label>Nome completo<input type="text" name="nome" placeholder="Seu nome completo" required autocomplete="name" /></label></div>
+            <div><label>E-mail<input type="email" name="email" placeholder="voce@email.com" required autocomplete="email" /></label></div>
           </div>
-          <div><label>Interesse<select><option>Quero apoiar</option><option>Quero colaborar</option><option>Quero participar de eventos</option></select></label></div>
-          <div><label>Mensagem<textarea placeholder="Conte como deseja participar do processo..."></textarea></label></div>
-          <button class="btn btn-primary" type="button">Enviar</button>
-        </div></div></section>
+          <div class="form-grid">
+            <div>
+              <label>Estado
+                <select name="estado" required>
+                  <option value="" selected disabled>Selecione seu estado</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                </select>
+              </label>
+            </div>
+            <div><label>Interesse<select name="interesse"><option>Quero apoiar</option><option>Quero colaborar</option><option>Quero participar de eventos</option></select></label></div>
+          </div>
+          <div><label>Mensagem<textarea name="mensagem" placeholder="Conte como deseja participar do processo..."></textarea></label></div>
+          <button class="btn btn-primary" type="submit" id="form-participe-btn">Enviar</button>
+          <p id="form-participe-status" role="status" aria-live="polite" style="margin-top:12px;"></p>
+        </form>
+      </div></section>
     </main>
 
     <footer class="footer"><div class="container"><div class="footer-grid"><div><h3>PSBL</h3><p>Partido Soberania Brasileira Liberal. Projeto institucional dedicado à soberania, liberdade, responsabilidade e desenvolvimento nacional.</p></div><div><h4>Navegação</h4><ul><li><a href="sobre.html">Sobre</a></li><li><a href="principios.html">Princípios</a></li><li><a href="propostas.html">Propostas</a></li><li><a href="documentos.html">Documentos</a></li></ul></div><div><h4>Institucional</h4><ul><li><a href="transparencia.html">Transparência</a></li><li><a href="noticias.html">Notícias</a></li><li><a href="participe.html">Participe</a></li></ul></div><div><h4>Ajuda</h4><ul><li><a href="faq.html">Perguntas frequentes</a></li></ul></div></div><div class="footer-bottom"><span>© <span id="year"></span> PSBL — Partido Soberania Brasileira Liberal</span><span>Partido em formação</span></div></div></footer>
@@ -56,5 +103,72 @@
     <script src="./menu.js"></script>
     <script src="./faq.js"></script>
     <script src="./search.js"></script>
+    <script>
+      // ⚠️ Troque pelo SEU e-mail. É para esse endereço que os cadastros serão enviados.
+      var EMAIL_DESTINO = "SEU_EMAIL@exemplo.com";
+
+      (function () {
+        var form = document.getElementById("form-participe");
+        var btn = document.getElementById("form-participe-btn");
+        var status = document.getElementById("form-participe-status");
+        if (!form) return;
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          var nome = form.nome.value.trim();
+          var email = form.email.value.trim();
+          var estado = form.estado.value;
+
+          if (nome.split(/\s+/).length < 2) {
+            status.textContent = "Informe seu nome completo (nome e sobrenome).";
+            form.nome.focus();
+            return;
+          }
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            status.textContent = "Informe um e-mail válido.";
+            form.email.focus();
+            return;
+          }
+          if (!estado) {
+            status.textContent = "Selecione seu estado.";
+            form.estado.focus();
+            return;
+          }
+
+          btn.disabled = true;
+          status.textContent = "Enviando...";
+
+          fetch("https://formsubmit.co/ajax/" + encodeURIComponent(EMAIL_DESTINO), {
+            method: "POST",
+            headers: { "Content-Type": "application/json", "Accept": "application/json" },
+            body: JSON.stringify({
+              "Nome completo": nome,
+              "E-mail": email,
+              "Estado": form.estado.options[form.estado.selectedIndex].text + " (" + estado + ")",
+              "Interesse": form.interesse.value,
+              "Mensagem": form.mensagem.value.trim(),
+              _subject: "Novo cadastro - Participe PSBL",
+              _captcha: "false",
+              _template: "table",
+              _honey: form._honey.value
+            })
+          })
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+              if (data && (data.success === "true" || data.success === true)) {
+                status.textContent = "Cadastro enviado com sucesso! Obrigado por participar.";
+                form.reset();
+              } else {
+                throw new Error("falha");
+              }
+            })
+            .catch(function () {
+              status.textContent = "Não foi possível enviar agora. Tente novamente em instantes.";
+            })
+            .finally(function () { btn.disabled = false; });
+        });
+      })();
+    </script>
   </body>
 </html>
