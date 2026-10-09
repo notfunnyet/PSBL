@@ -1,5 +1,29 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#0a7d46"/>
-  <rect y="23" width="64" height="18" fill="#f8f8f8"/>
-  <text x="32" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#0d0d0d">P</text>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80">
+  <defs>
+    <linearGradient id="bandeira" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a7d46"/>
+      <stop offset="50%" stop-color="#f8f8f8"/>
+      <stop offset="50%" stop-color="#f8f8f8"/>
+      <stop offset="50%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+
+    <clipPath id="texto">
+      <text x="120" y="59"
+            text-anchor="middle"
+            font-family="Ledlight, sans-serif"
+            font-size="58"
+            font-weight="bold"
+            letter-spacing="2">PSBL</text>
+    </clipPath>
+  </defs>
+
+  <rect width="240" height="80" fill="none"/>
+
+  <g clip-path="url(#texto)">
+    <rect x="0" y="0" width="240" height="26.67" fill="#0a7d46"/>
+    <rect x="0" y="26.67" width="240" height="26.66" fill="#f8f8f8"/>
+    <rect x="0" y="53.33" width="240" height="26.67" fill="#000000"/>
+  </g>
 </svg>
