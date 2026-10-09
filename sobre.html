@@ -1,158 +1,316 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PSBL | Partido Soberania Brasileira Liberal</title>
-    <meta name="description" content="Partido Soberania Brasileira Liberal — informações institucionais, princípios e propostas em formação." />
-    <meta property="og:title" content="PSBL | Partido Soberania Brasileira Liberal" />
-    <meta property="og:description" content="PSBL - Partido Soberania Brasileira Liberal. Soberania, liberdade, desenvolvimento e responsabilidade." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="./bandeira-psbl.svg" />
-    <link rel="icon" href="../download.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./responsive.css" />
-  </head>
-  <body data-page="sobre">
-    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a href="index.html" class="brand" aria-label="PSBL início">
-          <span class="brand-mark">P</span>
-          <span class="brand-text"><span>PSBL</span><strong>Partido</strong></span>
-        </a>
-        <div class="nav-layout">
-          <nav class="nav" aria-label="Navegação principal">
-            <a href="index.html">Início</a>
-            <a href="sobre.html" class="active">Sobre</a>
-            <a href="principios.html">Princípios</a>
-            <a href="propostas.html">Propostas</a>
-            <a href="documentos.html">Documentos</a>
-            <a href="transparencia.html">Transparência</a>
-            <a href="noticias.html">Notícias</a>
-            <a href="eventos.html">Eventos</a>
-            <a href="participe.html">Participe</a>
-            <a href="contato.html">Contato</a>
-            <a href="faq.html">FAQ</a>
-            <a href="privacidade.html">Privacidade</a>
-          </nav>
-          <div class="nav-actions">
-            <input id="site-search" class="site-search" type="search" aria-label="Buscar no site" placeholder="Buscar no site..." />
-            <button class="icon-btn" id="theme-toggle" type="button" aria-label="Ativar modo escuro">☾</button>
-            <button class="icon-btn menu-toggle" type="button" aria-label="Abrir menu">☰</button>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sobre | PSBL — Partido Soberania Brasileira Liberal</title>
+
+  <meta name="description" content="Conheça a história, a identidade institucional, a missão, a visão e os valores do PSBL, partido em formação.">
+
+  <meta property="og:title" content="Sobre | PSBL">
+  <meta property="og:description" content="Conheça o Partido Soberania Brasileira Liberal e sua proposta institucional.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./bandeira-psbl.svg">
+
+  <link rel="icon" href="./download.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body data-page="sobre">
+
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="./index.html" class="brand" aria-label="PSBL — início">
+        <span class="brand-mark">P</span>
+        <span class="brand-text">
+          <span>PSBL</span>
+          <strong>Partido Soberania Brasileira Liberal</strong>
+        </span>
+      </a>
+
+      <div class="nav-layout">
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="./index.html">Início</a>
+          <a href="./sobre.html" class="active" aria-current="page">Sobre</a>
+          <a href="./principios.html">Princípios</a>
+          <a href="./propostas.html">Propostas</a>
+          <a href="./documentos.html">Documentos</a>
+          <a href="./transparencia.html">Transparência</a>
+          <a href="./noticias.html">Notícias</a>
+          <a href="./eventos.html">Eventos</a>
+          <a href="./participe.html">Participe</a>
+          <a href="./contato.html">Contato</a>
+          <a href="./faq.html">FAQ</a>
+          <a href="./privacidade.html">Privacidade</a>
+        </nav>
+
+        <div class="nav-actions">
+          <input
+            id="site-search"
+            class="site-search"
+            type="search"
+            aria-label="Buscar no site"
+            placeholder="Buscar no site..."
+          >
+
+          <button
+            class="icon-btn"
+            id="theme-toggle"
+            type="button"
+            aria-label="Ativar modo escuro"
+          >☾</button>
+
+          <button
+            class="icon-btn menu-toggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >☰</button>
         </div>
-      </div>
-      <div class="status-bar"><div class="container"><span class="status-indicator" aria-hidden="true"></span><span>Partido em formação — registro eleitoral em tramitação</span></div></div>
-    </header>
 
-    <main id="main-content">
-      <section class="page-hero">
-        <div class="container">
-          <div class="breadcrumb"><a href="index.html">Início</a> / Sobre</div>
-          <h1>Sobre o PSBL</h1>
-        </div>
-      </section>
-
-      <section class="page-shell">
-        <div class="container search-target">
-          <div class="notice">
-            <p>O PSBL é apresentado como <strong>partido em formação</strong> e não como partido oficialmente registrado no TSE, salvo confirmação formal por parte das autoridades competentes.</p>
-          </div>
-
-          <div class="grid grid-2">
-            <div>
-              <h2>História e origem</h2>
-              <p>Meu nome é Gabriel, tenho 13 anos, estudo na área de TI e sou fundador do PSBL. O projeto do Partido Soberania Brasileira Liberal nasce de um esforço coletivo de organização política, inspirado na defesa da soberania nacional, da liberdade individual, da iniciativa privada e da responsabilidade pública.</p>
-              <p>Seu desenvolvimento se dá em um processo institucional de formação, com foco na definição de princípios, organização partidária, propostas, documentos e mobilização de apoiadores e militantes.</p>
-            </div>
-<div class="panel">
-            <img
-                    src="./bandeira-psbl.svg"
-                    alt="Bandeira do PSBL"
-                    style="width:100%; height:auto; border-radius:18px; border:1px solid var(--line);"
-                   />
-            </div>
-
-
-          <div class="grid grid-3" style="margin-top:28px;">
-            <article class="card search-target">
-              <h3>Missão</h3>
-              <p>Contribuir para o debate democrático brasileiro com um projeto nacional, liberal, responsável e comprometido com a soberania, a ordem constitucional e o desenvolvimento.</p>
-            </article>
-            <article class="card search-target">
-              <h3>Visão</h3>
-              <p>Ser uma referência política de organização institucional e pluralidade popular, com foco em liberdade, segurança, saúde, educação, infraestrutura e desenvolvimento regional.</p>
-            </article>
-            <article class="card search-target">
-              <h3>Valores</h3>
-              <p>Estão no centro do projeto a soberania nacional, a liberdade econômica, a responsabilidade individual, o respeito às leis, à cultura e às instituições democráticas.</p>
-            </article>
-          </div>
-
-          <div style="margin-top:40px;">
-            <h2>Identidade nacional e organização partidária</h2>
-            <p>O PSBL busca dialogar com a identidade brasileira, reconhecendo a importância da cultura, da tradição institucional, da diversidade regional e do respeito às liberdades civis. A organização partidária, nesse momento, se estrutura como um processo transparente e democrático de formação, com regras claras, aprimoramento programático e mobilização social.</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <h3>PSBL</h3>
-            <p>Partido Soberania Brasileira Liberal. Projeto institucional dedicado à soberania, liberdade, responsabilidade e desenvolvimento nacional.</p>
-          </div>
-          <div>
-            <h4>Navegação</h4>
-            <ul>
-              <li><a href="sobre.html">Sobre</a></li>
-              <li><a href="principios.html">Princípios</a></li>
-              <li><a href="propostas.html">Propostas</a></li>
-              <li><a href="documentos.html">Documentos</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Institucional</h4>
-            <ul>
-              <li><a href="transparencia.html">Transparência</a></li>
-              <li><a href="noticias.html">Notícias</a></li>
-              <li><a href="eventos.html">Eventos</a></li>
-              <li><a href="participe.html">Participe</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Contato</h4>
-            <ul>
-              <li><a href="contato.html">Fale conosco</a></li>
-              <li><a href="faq.html">Perguntas frequentes</a></li>
-              <li><a href="privacidade.html">Privacidade</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <span>© <span id="year"></span> PSBL — Partido Soberania Brasileira Liberal</span>
-          <span>Partido em formação</span>
-        </div>
-      </div>
-    </footer>
-
-    <button class="back-to-top" type="button" aria-label="Voltar ao topo">↑</button>
-    <div class="modal" aria-hidden="true">
-      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-        <div class="modal-header">
-          <h3 id="modal-title">Documento</h3>
-          <button class="close-modal" type="button" aria-label="Fechar modal">×</button>
-        </div>
-        <div id="modal-body"></div>
       </div>
     </div>
 
-    <script src="./main.js"></script>
-    <script src="./menu.js"></script>
-    <script src="./faq.js"></script>
-    <script src="./search.js"></script>
-  </body>
+    <div class="status-bar">
+      <div class="container">
+        <span class="status-indicator" aria-hidden="true"></span>
+        <span>Partido em formação — confirme a situação registral nos canais oficiais do TSE.</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="./index.html">Início</a> / Sobre
+        </div>
+        <h1>Sobre o PSBL</h1>
+        <p>Conheça nossa história, identidade e objetivos institucionais.</p>
+      </div>
+    </section>
+
+    <section class="page-shell">
+      <div class="container">
+
+        <div class="notice">
+          <p>
+            O PSBL é apresentado neste site como
+            <strong>partido em formação</strong>.
+            Não deve ser confundido com um partido oficialmente registrado
+            sem confirmação junto às autoridades competentes.
+          </p>
+        </div>
+
+        <!-- História e bandeira -->
+        <div class="grid grid-2">
+
+          <div class="search-target">
+            <h2>História e origem</h2>
+
+            <p>
+              O Partido Soberania Brasileira Liberal (PSBL) é um projeto
+              de organização política que busca desenvolver uma proposta
+              nacional baseada na soberania brasileira, na liberdade
+              individual, na iniciativa privada e na responsabilidade pública.
+            </p>
+
+            <p>
+              Sua construção envolve a elaboração de princípios, propostas,
+              documentos e formas de organização, com o objetivo de promover
+              o debate democrático e a participação cívica.
+            </p>
+
+            <p>
+              O projeto está em desenvolvimento e sua organização deverá
+              observar os requisitos legais aplicáveis à formação de partidos
+              políticos no Brasil.
+            </p>
+          </div>
+
+          <div class="panel">
+            <img
+              src="./bandeira-psbl.svg"
+              alt="Bandeira do Partido Soberania Brasileira Liberal"
+              loading="lazy"
+              style="display:block; width:100%; height:auto; border-radius:18px; border:1px solid var(--line);"
+            >
+          </div>
+
+        </div>
+
+        <!-- Missão, visão e valores -->
+        <div class="grid grid-3" style="margin-top:28px;">
+
+          <article class="card search-target">
+            <h3>Missão</h3>
+            <p>
+              Contribuir para o debate democrático brasileiro por meio
+              de ideias relacionadas à soberania, à liberdade, à
+              responsabilidade pública e ao desenvolvimento nacional.
+            </p>
+          </article>
+
+          <article class="card search-target">
+            <h3>Visão</h3>
+            <p>
+              Desenvolver um projeto político institucional comprometido
+              com o desenvolvimento regional, a educação, a saúde,
+              a infraestrutura e a participação democrática.
+            </p>
+          </article>
+
+          <article class="card search-target">
+            <h3>Valores</h3>
+            <p>
+              Soberania nacional, liberdade econômica, responsabilidade,
+              respeito às leis, pluralismo político e compromisso com
+              as instituições democráticas.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- Identidade institucional -->
+        <section style="margin-top:40px;">
+          <h2>Identidade nacional e organização partidária</h2>
+
+          <p>
+            O PSBL busca dialogar com a identidade brasileira, reconhecendo
+            a importância da cultura, das tradições, da diversidade regional
+            e do respeito às liberdades civis.
+          </p>
+
+          <p>
+            A proposta de organização prevê o desenvolvimento de um programa
+            político, a elaboração de documentos institucionais e a
+            participação de apoiadores, respeitando a legislação brasileira
+            e os princípios democráticos.
+          </p>
+        </section>
+
+        <!-- Navegação complementar -->
+        <section class="section" style="padding-bottom:0;">
+          <div class="section-head">
+            <span class="kicker">Saiba mais</span>
+            <h2>Conheça o projeto PSBL</h2>
+          </div>
+
+          <div class="actions">
+            <a class="btn btn-primary" href="./principios.html">
+              Nossos princípios
+            </a>
+
+            <a class="btn btn-light" href="./propostas.html">
+              Nossas propostas
+            </a>
+
+            <a class="btn btn-outline" href="./documentos.html">
+              Documentos
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <h3>PSBL</h3>
+          <p>
+            Partido Soberania Brasileira Liberal.
+            Projeto institucional dedicado à soberania, à liberdade,
+            à responsabilidade e ao desenvolvimento nacional.
+          </p>
+        </div>
+
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./principios.html">Princípios</a></li>
+            <li><a href="./propostas.html">Propostas</a></li>
+            <li><a href="./documentos.html">Documentos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="./transparencia.html">Transparência</a></li>
+            <li><a href="./noticias.html">Notícias</a></li>
+            <li><a href="./eventos.html">Eventos</a></li>
+            <li><a href="./participe.html">Participe</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Ajuda e contato</h4>
+          <ul>
+            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="./faq.html">Perguntas frequentes</a></li>
+            <li><a href="./privacidade.html">Privacidade</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>
+          © <span id="year"></span> PSBL — Partido Soberania Brasileira Liberal
+        </span>
+        <span>Projeto em formação</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <button
+    class="back-to-top"
+    type="button"
+    aria-label="Voltar ao topo"
+  >↑</button>
+
+  <div class="modal" aria-hidden="true">
+    <div
+      class="modal-card"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <div class="modal-header">
+        <h3 id="modal-title">Documento</h3>
+        <button
+          class="close-modal"
+          type="button"
+          aria-label="Fechar modal"
+        >×</button>
+      </div>
+
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+  <script src="./menu.js"></script>
+  <script src="./faq.js"></script>
+  <script src="./search.js"></script>
+
+</body>
 </html>
+```
